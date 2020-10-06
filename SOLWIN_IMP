@@ -1,0 +1,81 @@
+-------------SOLWIN-------------
+
+Table:
+
+	Person
+		ID
+		Name
+		Email  - unique
+		Gender
+		Marital Status
+		Marriage Date
+		Salary
+		Country
+		State
+		About
+		Hobbies
+		Status
+		
+	Hobbies
+		id
+		hobby
+		
+	Country
+		id
+		country
+		
+	State
+		id
+		state
+		country_id
+		
+
+File Structure:
+
+index.html -> submit -> search.html 
+
+search.html - List all data
+
+
+Task:
+1. Add/Edit should be working as describe (PHP or other frameuowork code eg. codeigniter, laravel)	[DONE]
+2. List data should be working as describe                                                 			[DONE]
+3. Search on list should be working as describe														[Done]
+4. Jquery or Javascript validation on add/edit page. 												[DONE]
+5. Sorting on search page columns
+6. Pagination on search page columns																[DONE]
+7. Country state - dependent dropdown box  															[DONE]
+8. Hobbies from database    																		[Done]
+9. Marriage date disable if status is unmaried 														[DONE]
+10. Email is unique - ajax																			[DONE]
+11. Disable future date from marriage date															[DONE]
+
+
+		
+<li>
+<a href="index.php?page=<?= $previous; ?>" aria-label="Previous">
+<span aria-hidden="true">&laquo; Previous</span>
+</a>
+</li>
+
+<li>
+<a href="index.php?page=<?= $next; ?>" aria-label="Previous">
+<span aria-hidden="true">&laquo; Next</span>
+</a>
+</li>
+
+
+Add
+1) Adding the duplicate email: I entered the duplicate email and its displaying the message "This email is not available". So replace your message with "This email is already taken." & focus on this field [DONE]
+2) Added the duplicate email: Once i have added the duplicate email and clicked on the submit button, Its displaying the message "Something went wrong. Please try again" in the alert box.[DONE]
+3) Display the Marriage date input, if marital status is "Married" [DONE]
+
+Edit
+1) Update email: I haven't changed my email and its displaying the message "This email is not available". So if email will be changed except edited employee then show the message "This email is already taken." [DONE]
+2) Update the duplicate email: Once i have updated the duplicate email and clicked on the submit button, Its displaying the message "Something went wrong. Please try again" in the alert box.  [DONE]
+3) State should be selected. [DONE]
+
+Search
+- Once we search anything then search field is blank, It should not be. If we search anything then these fields should be fill-able [DONE]
+- Add the "All" option in country & state drop-down [DONE]
+- Sr.No glitching after searching with pagination result. [DONE]
